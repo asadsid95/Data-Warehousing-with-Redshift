@@ -2,6 +2,9 @@ import configparser
 import psycopg2
 from sql_queries import create_table_queries, drop_table_queries
 
+# 1. Connect to DB; see dwh.cfg and use those variables
+
+# 2. Create and connect to RS
 
 def drop_tables(cur, conn):
     for query in drop_table_queries:
