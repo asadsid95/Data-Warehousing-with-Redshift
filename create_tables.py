@@ -2,23 +2,36 @@ import configparser
 import psycopg2
 from sql_queries import create_table_queries, drop_table_queries
 
-# 1. Connect to DB; see dwh.cfg and use those variables
-
-# 2. Create and connect to RS
-
 def drop_tables(cur, conn):
+    """
+    Drops each table using the queries in `drop_table_queries` list.
+    """
     for query in drop_table_queries:
         cur.execute(query)
         conn.commit()
 
 
 def create_tables(cur, conn):
+    """
+    Creates each table using the queries in `create_table_queries` list. 
+    """
     for query in create_table_queries:
         cur.execute(query)
         conn.commit()
 
-
 def main():
+    """
+    - Configuration file 'dwh.cfg' is parsed using 'configparser' module 
+    
+    - Establishes connection with the database in Redshift cluster's nodes using values stored in config file and make a cursor object for it.  
+    
+    - Drops all the tables.  
+    
+    - Creates all tables needed. 
+    
+    - Finally, closes the connection. 
+    """
+    
     config = configparser.ConfigParser()
     config.read('dwh.cfg')
 
