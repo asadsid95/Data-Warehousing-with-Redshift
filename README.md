@@ -22,7 +22,7 @@ Data Engineering team will be conducting 2 tasks:
 
 Star schema design is chosen for this project to allow for JOIN operations needed for its fact table from dimension tables.
 
-**Before describing fact & dimensions tables, 2 staging tables are desribed:**
+**Before describing fact & dimensions tables, 2 staging tables are described:**
 
 ### Staging table's attributes/columns, data types are as follows:
 
