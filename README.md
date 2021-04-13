@@ -15,8 +15,8 @@ This would circle back into the overarching requirement as it enables the Analyt
 
 Data Engineering team will be conducting 2 tasks: 
 
-⋅⋅* Create table schemas to include 4 dimensions and 1 fact table (Star schema)
-⋅⋅* Write ETL pipeline to extract, transform and load data from 2 local directories (data/song_data and data/log_data) into these tables   
+1. Create table schemas to include 4 dimensions and 1 fact table (Star schema)
+2. Write ETL pipeline to extract, transform and load data from 2 local directories (data/song_data and data/log_data) into these tables   
 
 ## Database Schema Design 
 
