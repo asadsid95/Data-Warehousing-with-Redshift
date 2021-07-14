@@ -1,4 +1,4 @@
-# Project: Data Warehouse
+# Project: Data Warehousing with Redshift
 
 ## Background
 
